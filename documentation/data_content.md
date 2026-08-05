@@ -137,7 +137,7 @@ The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontolo
 
 ### Complex Pages
 
-Each complex is extensively annotated and can be viewed using the ComplexViewer, which allows you to study the topology and stoichiometry of a complex when this information is known. Within the viewer, you can click on a node to visualize any recognized binding domains.
+Each complex is extensively annotated and can be viewed using the Complex Viewer, which allows you to study the topology and stoichiometry of a complex when this information is known. Within the Viewer, you can click on a node to visualize any recognized binding domains.
 
 In addition to this visualization widget, a complex page contains information on the complex function, physical and biological properties, gene expression and localization, pairwise protein-protein interaction data, diseases and pathology information, and any other additional curated information (such as cross-references and synonyms).
 
