@@ -4,7 +4,8 @@
 
 The Complex Portal is a manually curated, encyclopedic resource of biologically functional and stable macromolecular complexes from a number of key model organisms. Complexes may contain proteins as well as small molecules and nucleic acids, providing they are an integral part of the complex.
 
-In addition to the manually curated complexes, which adhere to this definition, the database provides extended coverage of the human complexome with high confidence assemblies of machine-learning predicted complexes.
+In addition to the manually curated complexes, which adhere to this definition, the database provides extended coverage of the human complexome with high confidence assemblies of machine-learning predicted complexes from hu.MAP3.0 and MuSIC.
+
 
 ### What can be described as a complex?
 
@@ -115,14 +116,14 @@ The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontolo
 
 |ECO Code|Name|Description|Confidence Score|
 |--------|----|-----------|----------------|
-|[ECO:0000353](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0000353)|physical interaction evidence used in manual assertion|Used when experimental evidence for the complexes exists in a single experiment. The complex must be cross-referenced to experimental data in either an IMEx database, wwPDB or EMDB.|![](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_5_stars.png)|
-|[ECO:0005543](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005543)|biological system reconstruction evidence by experimental evidence from mixed species used in manual assertion|Used when experimental evidence for the complexes exists in a single experiment but the constructs are derived from homologous gene products in different species. The complex must be cross-referenced to experimental in either an IMEx database, wwPDB or EMDB.|![](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_5_stars.png)|
-|[ECO:0005610](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005610)|biological system reconstruction evidence based on homology evidence used in manual assertion|Used when experimental evidence exists for a complex in one species and it is desirable to curate a similar complex in another species for which only limited experimental evidence exists. Sequences and number of genome-encoded components are fairly conserved but some divergence may be observed. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|![](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_4_stars.png)|
-|[ECO:0005544](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005544)|biological system reconstruction evidence based on orthology evidence used in manual assertion|Used when experimental evidence exists for a complex in one species (e.g. human) and it is desirable to curate the same complex in another species for which only limited experimental evidence exists (e.g. mouse). Sequences are fairly conserved but some divergence may be observed and the number of genome-encoded components is identical. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|![](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_4_stars.png)|
-|[ECO:0005546](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005546)|biological system reconstruction evidence based on paralogy evidence used in manual assertion|Used when experimental evidence exists for a complex and it is desirable to curate a similar complex in the same species for which only limited experimental evidence exists. Sequences and number of genome-encoded components are fairly conserved but some divergence may be observed. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|![](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_4_stars.png)|
-|[ECO:0005547](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005547)|biological system reconstruction evidence based on inference from background scientific knowledge used in manual assertion|Used when no or only partial experimental evidence exists but the complex is generally assumed to exist. Functional studies or ligand binding evidence from pharmacological experiments are often used for the reconstruction of such complexes.|![](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_3_stars.png)|
-|[ECO:0007653](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0007653)|automatically integrated combinatorial computational evidence used in automatic assertion|Used if a complex is predicted to exist from machine-learning data and is additionally supported by other evidence such as high confidence covariation data.|![](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_2_stars.png)|
-|[ECO:0008004](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0008004)|machine learning method evidence used in automatic assertion|Used if a complex is predicted to exist from machine-learning data but has no additional supporting evidence.|![](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_1_star.png)|
+|[ECO:0000353](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0000353)|physical interaction evidence used in manual assertion|Used when experimental evidence for the complexes exists in a single experiment. The complex must be cross-referenced to experimental data in either an IMEx database, wwPDB or EMDB.|![Direct experimental evidence (ECO:0000353/ECO:0005543) gets 5 stars.](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_5_stars.png)|
+|[ECO:0005543](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005543)|biological system reconstruction evidence by experimental evidence from mixed species used in manual assertion|Used when experimental evidence for the complexes exists in a single experiment but the constructs are derived from homologous gene products in different species. The complex must be cross-referenced to experimental in either an IMEx database, wwPDB or EMDB.|![Direct experimental evidence (ECO:0000353/ECO:0005543) gets 5 stars.](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_5_stars.png)|
+|[ECO:0005610](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005610)|biological system reconstruction evidence based on homology evidence used in manual assertion|Used when experimental evidence exists for a complex in one species and it is desirable to curate a similar complex in another species for which only limited experimental evidence exists. Sequences and number of genome-encoded components are fairly conserved but some divergence may be observed. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|![Homology (ECO:0005610) inference gets 4 stars.](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_4_stars.png)|
+|[ECO:0005544](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005544)|biological system reconstruction evidence based on orthology evidence used in manual assertion|Used when experimental evidence exists for a complex in one species (e.g. human) and it is desirable to curate the same complex in another species for which only limited experimental evidence exists (e.g. mouse). Sequences are fairly conserved but some divergence may be observed and the number of genome-encoded components is identical. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|![Orthology (ECO:0005544) inference gets 4 stars.](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_4_stars.png)|
+|[ECO:0005546](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005546)|biological system reconstruction evidence based on paralogy evidence used in manual assertion|Used when experimental evidence exists for a complex and it is desirable to curate a similar complex in the same species for which only limited experimental evidence exists. Sequences and number of genome-encoded components are fairly conserved but some divergence may be observed. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|![Paralogy (ECO:0005546) inference gets 4 stars.](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_4_stars.png)|
+|[ECO:0005547](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0005547)|biological system reconstruction evidence based on inference from background scientific knowledge used in manual assertion|Used when no or only partial experimental evidence exists but the complex is generally assumed to exist. Functional studies or ligand binding evidence from pharmacological experiments are often used for the reconstruction of such complexes.|![Background-knowledge inference (ECO:0005547) gets 3 stars.](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_3_stars.png)|
+|[ECO:0007653](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0007653)|automatically integrated combinatorial computational evidence used in automatic assertion|Used if a complex is predicted to exist from machine-learning data and is additionally supported by other evidence such as high confidence covariation data.|![A combination of computational evidence sources (ECO:0007653) gets 2 stars.](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_2_stars.png)|
+|[ECO:0008004](http://www.ebi.ac.uk/ols/ontologies/ECO/terms?obo_id=ECO:0008004)|machine learning method evidence used in automatic assertion|Used if a complex is predicted to exist from machine-learning data but has no additional supporting evidence.|![Machine-learning-only prediction (ECO:0008004) gets 1 star.](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/score_1_star.png)|
 
 ### Retrieval of references for curation evidence
 
@@ -131,6 +132,31 @@ The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontolo
 - If a complex is inferred by homology (ECO:0005610 or a child term) the reference for the experimental evidence has to be retrieved from the primary database cross-reference (IntAct/IMEx, wwPDB, EMDB) of the complex it was inferred from. They are not necessarily listed in the cross-references.
 
 - If is no known or curated experimental evidence is available for a complex (ECO:0005547) the complex has been inferred from several references or review(s) which are listed among the "additional literature" cross-references.
+
+## Visualising data from the Complex Portal
+
+### Complex Pages
+
+Each complex is extensively annotated and can be viewed using the ComplexViewer, which allows you to study the topology and stoichiometry of a complex when this information is known. Within the viewer, you can click on a node to visualize any recognized binding domains.
+
+In addition to this visualization widget, a complex page contains information on the complex function, physical and biological properties, gene expression and localization, pairwise protein-protein interaction data, diseases and pathology information, and any other additional curated information (such as cross-references and synonyms).
+
+Rhea reactions cross-referenced to complexes as part of the Catalytic Activity section of an entry can also be displayed, with the integration of the Rhea visualization widget.
+
+### Complex Navigator
+
+Additionally, the Complex Portal provides the Complex Navigator, which offers various display options for exploring complex data. You can add complexes to a basket for comparison.
+
+In the Complex Navigator, you can use the “Sorting component” option to sort complexes and the “Display option” to further tailor your display preferences. The “Group by orthologs” toggle can be used to view any orthologous groups from the Panther database that map to the components of a complex.
+
+The Navigator view itself functions as a matrix where:
+
+-	Rows contain complex names.
+-	Columns contain their respective components.
+-	Paralogous complexes are displayed clustered together.
+-	Circles indicate the stoichiometry of a component within each complex.
+-	Manually curated complexes are displayed in a darker colour and shown on the left side of the Navigator.
+-	Predicted complexes are displayed in a lighter colour and shown on the right side of the Navigator.
 
 ## Free text annotation
 
@@ -253,9 +279,17 @@ If the complex has been merged into an existing entry the accession number of th
 
 Secondary IDs are available in all download files while the website currently only displays the primary AC (e.g. CPX-3042 is now part of [CPX-2161](https://www.ebi.ac.uk/complexportal/complex/CPX-2161)).
 
+## Machine-learning Predicted Complexes
+
+### hu.MAP3.0 complexes 
+hu.MAP3.0 complexes are derived from a computational workflow that has integrated high-throughput experimental and computational data. Over 25,000 mass spectrometry experiments from multiple approaches (i.e. AP-MS, CF-MS, proximity labelling), together with manually curated human protein complexes downloaded from the Complex Portal, were used to train a machine learning model and predict around 15,000 high-confidence human complexes, significantly extending the coverage of the human complexome.
+
+### MuSIC maps
+MuSIC (Multi-Scale Integrated Cell) maps, imported from the MuSIC project, are systematic maps of human cellular architecture constructed by integrating several different datasets. Immunofluorescent images from the Human Protein Atlas, along with Affinity Purification Mass Spectrometry data from one or more sources, were analysed with deep neural networks, and the embeddings were integrated into an interaction network to provide a hierarchical model of cell structures at different scales. There are 317 MuSIC complexes currently in the Complex Portal. 
+
 ## For curators
 
-For trainined curators: here is the latest version of our [Complex Portal curation manual](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/Manual_Complexes_curation.pdf).
+For trained curators: here is the latest version of our [Complex Portal curation manual](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/Manual_Complexes_curation.pdf).
 
 Depending on your browser, you may have to right click on the link and choose "Save Link As" to download the file.
 
