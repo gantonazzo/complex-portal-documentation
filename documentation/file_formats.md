@@ -1,4 +1,4 @@
-Complex Portal provides its data in 3 different file formats, PSI-MI XML, MI-JSON and ComplexTab. Below are links to our schemas and some content explanations. For details on curation strategies, please see the [Data Content](/complexportal/documentation) section. All files can be downloaded from the Downloads section of the homepage and from our [ftp site](https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/), and will be updated as we add new complexes with every data release.
+Complex Portal provides its data in 3 different file formats, PSI-MI XML, MI-JSON and ComplexTab. You can download the entire Complex Portal data, or the species-specific complexomes, in those different formats, from the Downloads section of the homepage and from our [ftp site](https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/). The downloadable data will be updated as we add new complexes with every data release. Below are links to our schemas and some content explanations. For details on curation strategies, please see the [Data Content](/complexportal/documentation) section.
 
 ## PSI-MI XML
 
